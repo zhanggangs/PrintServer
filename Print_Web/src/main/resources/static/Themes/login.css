@@ -1,0 +1,292 @@
+html{
+	overflow:hidden;
+}
+body{
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	line-height: 100%;
+	height: 100%;
+	border:0;
+	text-align: left;
+	background-color:#e1e5e8;/*主体背景色*/
+	font-family:"微软雅黑";
+	background-repeat:no-repeat;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    background-size: auto, cover;
+    background-image:url(../Imgs/bg_login.jpg);
+}
+form{
+	margin: 0;
+	padding: 0;
+}
+.clear{
+	clear:both;
+	line-height:1px;
+}
+.login_main{
+	width: 1280px;/*登录面板宽度*/
+	margin: 0 auto;
+	text-align: left;
+	position:relative;
+}
+.login_top{
+	width: 100%;
+	height: 177px;/*登录面板头部高度*/
+}
+.login_middle{
+	width: 100%;
+	height: 412px;/*登录面板中部高度*/
+}
+.login_middleleft{
+	float: left;
+	width: 702px;/*登录面板中部左侧宽度*/
+	height: 100%;
+}
+.login_middlecenter{
+	float: left;
+	width: 578px;/*登录面板中部右侧宽度*/
+	height: 100%;
+	text-align: left;
+}
+.login_bottom{
+	width: 100%;
+	height: 211px;/*登录面板底部高度*/
+}
+
+.letter_space{
+letter-spacing:1em;
+}
+.login_user{
+	padding:0 0 0 0px;
+	font-weight:bold;
+}
+.login_pass{
+	padding:28px 0 0 0px;/*密码框距用户名框的垂直距离*/
+	font-weight:bold;
+}
+.login_yz{
+	padding:28px 0 0 0px;/*密码框距用户名框的垂直距离*/
+	width:130px;
+	float:left;
+}
+
+.login_yzpic{
+	padding:28px 0 0 0px;/*密码框距用户名框的垂直距离*/
+	width:100px;
+	float:left;
+}
+.login_check1{
+	padding:15px 0 0 0px;
+	float:left;
+	width:200px;
+}
+.login_check2{
+	padding:15px 0 0 0px;
+	float:left;
+	width:100px;
+}
+.login_form{
+	padding: 80px 0 0 40px;
+}
+.login_content{
+	width: 735px;
+	height:306px;
+	background-image: url(../Imgs/login_box.png);
+	background-repeat:no-repeat;
+	margin:30px auto 0 auto;
+	position:relative;
+}
+
+.login_user input{
+	border:solid 1px #ababab;
+	background-image: url(../Imgs/icon_login_user.png);
+	background-repeat:no-repeat;
+	background-position:10px 50%;
+	background-color:#ffffff;
+	padding:0 0 0 50px;
+	width:190px;/*用户名框宽度*/
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+}
+.login_user input:focus{
+	background-image: url(../Imgs/icon_login_user.png);
+}
+.login_pass input{
+	border:solid 1px #ababab;
+	width:190px;/*用户名框宽度*/
+	height:35px;
+	line-height:35px;
+	padding:0 0 0 50px;
+	background-color:#ffffff;
+	background-image: url(../Imgs/icon_login_pw.png);
+	background-repeat:no-repeat;
+	background-position:10px 50%;
+	font-size:14px;
+}
+.login_pass input:focus{
+	background-image: url(../Imgs/icon_login_pw.png);
+}
+.login_yz input{
+	border:solid 1px #ababab;
+	width:100px;/*用户名框宽度*/
+	height:35px;
+	line-height:35px;
+	padding:0 0 0 20px;
+	background-color:#ffffff;
+	font-size:14px;
+}
+input, textarea {
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+            -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+            -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+            -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+            transition: border linear 0.2s, box-shadow linear 0.2s;
+			border-radius: 0px;
+}
+ input:focus, textarea:focus {
+ 	outline: none;
+	border-color:#1b98d7;
+	outline:0;
+	color:#1b98d7;
+ }
+.login_button_left{
+	position:absolute;
+	left:40px;/*提交按钮x坐标*/
+	top:206px;/*提交按钮y坐标*/
+}
+
+.login_button input{
+	width: 240px;/*按钮宽度*/
+	height: 46px;/*按钮高度*/
+	border:0;
+	cursor:pointer;
+	cursor:hand;
+	color:#ffffff;
+	font-size:18px;
+	font-family:"微软雅黑";
+	background-image: url(../Imgs/bu_login.png);
+	background-repeat:no-repeat;
+}
+.login_button input:hover{
+	background-image: url(../Imgs/bu_login_a.png);
+}
+.login_button input:focus{
+	background-image: url(../Imgs/bu_login_r.png);
+}
+.login_button_right{
+	position:absolute;
+	left:595px;/*重置按钮x坐标*/
+	top:436px;/*重置按钮y坐标*/
+}
+.login_copyright{
+	color:#000000;/*版权声明文字颜色*/
+	text-align:center;
+	font-family:"微软雅黑";
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	text-align: center;
+}
+.login_info{
+	color:red;
+	position:absolute;
+	left:40px;/*提示信息x坐标*/
+	top:265px;/*提示信息y坐标*/
+	line-height:150%;
+	width:240px;
+	overflow:hidden;
+	font-size:14px;
+}
+.login_qs{
+	color:#ababab;
+	position:absolute;
+	right:100px;/*提示信息x坐标*/
+	top:20px;/*提示信息y坐标*/
+	line-height:150%;
+	width:100px;
+	overflow:hidden;
+}
+/*.login_qs a{
+	color:#ababab;
+	text-decoration:none;
+	background-image: url(../Imgs/qa.png);
+	background-repeat:no-repeat;
+	background-position:5px 50%;
+	padding:0 0 0 25px;
+}*/
+.login_qs a:hover{
+	color:#ababab;
+	text-decoration:none;
+}
+.login_skin{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	color:#ffffff;/*皮肤管理文字颜色*/
+	height:30px;
+	line-height:30px;
+}
+.login_skin span{
+	cursor:pointer;
+	cursor:hand;
+}
+
+.login-footer {
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+.login-footer .text {
+	font-size: 12px;
+	color: #6e6e6e;
+	text-align: center;
+}
+.login-footer .text>.logo {
+	background: url(../Imgs/icon_system_footer.png) center no-repeat;
+	width: 45px;
+	height: 17px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 10px 0px 0px;
+}
+.login_title {
+	background: url(../Imgs/logo_ford_login.png) center no-repeat;
+	height: 183px;
+	margin-top:15px;
+
+}
+
+ #cursorMessageDiv {
+            position: absolute;
+            z-index: 99999;
+            border: solid 1px #cc9933;
+            background: #ffffcc;
+            padding: 2px;
+            margin: 0px;
+            display: none;
+            line-height: 150%;
+        }
+        /*提示信息*/
+        .white {
+            color: #ffffff;
+        }
+
+            .white a {
+                color: #ffffff;
+                text-decoration: underline;
+            }
+
+                .white a:hover {
+                    color: #ffffff;
+                    text-decoration: underline;
+                }

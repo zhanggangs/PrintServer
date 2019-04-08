@@ -1,0 +1,5 @@
+.validatebox-invalid {
+  border: 1px solid #ffa8a8 !important;
+  background-color: #fff3f3;
+  color: #000;
+}

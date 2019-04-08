@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../Themes/Gray/easyui.css"/>
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.easyui.js"></script>
+    <script type="text/javascript" src="../Scripts/easyui-lang-zh_CN.js"></script>
+    <title>测试页面</title>
+</head>
+<body>
+<div>
+    <label>标签打印:</label>
+    <br>
+    <input type="button" onclick="printLabel()" value="点击测试">
+    <br>
+    <label>A4打印:</label>
+    <br>
+    <input type="button" onclick="printA4()" value="点击测试">
+</div>
+
+</body>
+<script>
+
+    function printLabel() {
+        console.log("----进行标签打印----");
+        $.ajax({
+            url: "http://127.0.0.1:8002/config/getQueueName",
+            async: false,
+            type: "get",
+            dataType: "jsonp",  //数据格式设置为jsonp
+            jsonp: "callback",  //Jquery生成验证参数的名称
+            jsonpCallback: "successCallback",
+            success: function (data) {
+                print(data.queueName, "../printLabel", "Microsoft Print to PDF");
+            },
+            error: function (data) {
+                console.log("错误");
+                console.log(data);
+            }
+        });
+    }
+
+    function printA4() {
+        console.log("----进行A4打印----");
+        $.ajax({
+            url: "http://127.0.0.1:8002/config/getQueueName",
+            async: false,
+            type: "get",
+            dataType: "jsonp",  //数据格式设置为jsonp
+            jsonp: "callback",  //Jquery生成验证参数的名称
+            jsonpCallback: "successCallback",
+            success: function (data) {
+                print(data.queueName, "../printA4", "Microsoft Print to PDF");
+            },
+            error: function (data) {
+                console.log("错误");
+                console.log(data);
+            }
+        });
+    }
+
+    function print(queueName, url, printerName) {
+
+        $.ajax({
+            url: url,
+            type: "post",
+            async: false,
+            dataType: "json",
+            data: {
+                queueName: queueName,
+                printer: printerName,
+            },
+            success: function (data) {
+                if (data.code == 200) {
+                    $.messager.alert("提示", data.message, "info");
+                } else {
+                    $.messager.alert("提示", data.message, "error");
+                }
+            }
+
+        })
+    }
+
+</script>
+
+</html>

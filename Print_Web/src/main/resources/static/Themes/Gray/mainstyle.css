@@ -1,0 +1,352 @@
+/*基本样式*/
+body{
+	text-align: left;
+	background-color: #f5f5f5;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+a1{
+	color: #333333;
+	text-decoration: none;
+	outline:none;
+	cursor: pointer;
+}
+a1:hover{
+	color: #4a88df;
+	text-decoration: underline;
+}
+/*基本样式*/
+
+
+/*头部与导航*/
+#hbox{
+	padding: 0px;
+    overflow:hidden;	
+}
+#bs_bannercenter{
+	width: 100%;
+	height: 89px;
+	background-image: url(Imgs/bs_bannercenter.jpg);
+	background-repeat: repeat-x;
+}
+#bs_bannerleft{
+	width: 100%;
+	height: 100%;
+	background-image: url(Imgs/bs_bannerleft.jpg);
+	background-repeat: no-repeat;
+}
+#bs_bannerright{
+	width: 100%;
+	height: 100%;
+	background-image: url(Imgs/bs_bannerright.jpg);
+	background-position: 100% 0%;
+	background-repeat: no-repeat;
+}
+
+#bs_navcenter{
+	width: 100%;
+	height: 40px;
+	background-image: url(Imgs/menu.png);
+	background-repeat: repeat-x;
+	background-position: 0% 100%;
+}
+#bs_navleft{
+	width: 100%;
+	height: 100%;
+}
+#bs_navright{
+	width: 100%;
+	height: 100%;
+    padding-left: 100px;
+}
+
+.bs_nav{
+	padding: 0px 0 0 165px;/*导航区的位置*/
+	color: #343233;
+}
+.bs_nav a{
+	color:#343233;
+}
+.bs_nav a:hover{
+	color:#343233;
+	text-decoration:none;
+}
+.bs_navleft{
+	float: left;
+	padding:0 0 0 15px;
+	color: #343233;
+}
+.bs_navright{
+	float: right;
+	padding: 0 10px 0 0;
+}
+.bs_navleft li{
+	float:left;
+	padding-right:4px;
+}
+.fontChange{
+	padding:4px 0 0 0;
+}
+.fontChange span a{
+	height:17px;
+	line-height:17px;
+	width:17px;
+	text-align:center;
+	display:block;
+	background-image: url(click.gif);
+	background-repeat: no-repeat;
+	color: #343233;
+}
+.fontChange span a:hover{
+	background-image: url(fontBg.jpg)!important;
+	background-repeat: no-repeat;
+	text-decoration:none;
+	color:white;
+}
+.fontChange span .fontChange_cur{
+	background-image: url(fontBg.jpg)!important;
+	background-repeat: no-repeat;
+	text-decoration:none;
+	color:white;
+}
+.bs_banner_logo{
+	background-image: url(logo.png);
+	background-repeat: no-repeat;
+	width:71px;/*logo宽度*/
+	height:42px;/*logo高度*/
+	position:absolute;
+	top:15px;/*logo y坐标*/
+	left:20px;/*logo x坐标*/
+}
+.bs_banner_title{
+	background-image: url(title.png);
+	background-repeat: no-repeat;
+	width:339px;/*头部标题宽度*/
+	height:36px;/*头部标题高度*/
+	position:absolute;
+	top:20px;/*头部标题y坐标*/
+	left:100px;/*头部标题x坐标*/
+}
+.subTitle{
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+	position:absolute;
+	left:430px;
+	top:30px;
+}
+/*头部与导航*/
+
+.top_position{
+	color:#ffffff;
+	width:300px;
+    cursor:pointer;
+    cursor: hand;
+	position:absolute;
+	top:60px;
+	text-align:right;
+	height:30px;
+	width:100%;
+	line-height:30px;
+}
+
+.top_position:hover{
+    color:red;
+}
+
+.top_info{
+	width:120px;
+	overflow:hidden;
+	height:24px;
+	line-height:24px;
+}
+.top_menu{
+	background-image: url(Imgs/top_menu.png);
+	background-repeat:no-repeat;
+	height:32px;
+	position:absolute;
+	right:0;
+	padding:2px 0 0 40px;
+	color:#254495;
+	overflow:hidden;
+}
+
+
+.top_icon1{
+	background-image: url(Imgs/icon1.png);
+	background-repeat:no-repeat;
+	width:29px;
+	height:18px;
+	display:block;
+}
+.top_icon2{
+	background-image: url(Imgs/icon2.png);
+	background-repeat:no-repeat;
+	width:29px;
+	height:18px;
+	display:block;
+}
+.top_icon3{
+	background-image: url(Imgs/icon3.png);
+	background-repeat:no-repeat;
+	width:29px;
+	height:18px;
+	display:block;
+}
+.top_icon4{
+	background-image: url(Imgs/icon4.png);
+	background-repeat:no-repeat;
+	width:10px;
+	height:18px;
+	display:block;
+}
+
+/*横向标签导航结构*/
+
+
+.top_nav{
+	position:absolute;
+	left:100px;
+	top:91px;
+	overflow:hidden;
+}
+.top_nav a{
+	height:38px;
+	float:left;
+	line-height:38px;
+	padding:0 0 0 0px;
+	background-repeat:no-repeat;
+	margin:0 5px 0 0;
+}
+.top_nav a b{
+	color:#fff; 
+	text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+	font-weight:normal;
+	display:inline-block;
+	padding: 0 12px 0 0;
+    white-space: nowrap;
+	text-decoration:none;
+	font-size:15px;
+	background-repeat:no-repeat;
+	background-position:100% 0%;
+}
+.top_nav a:hover{
+	text-decoration:none;
+	background-image: url(Imgs/nav_btnbg_over.png);
+}
+.top_nav a:hover b{
+	color:#fff;text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+	background-image: url(Imgs/nav_btnbg_over.png);
+}
+.top_nav a.current{
+	background-image: url(Imgs/nav_btnbg_over.png);
+}
+.top_nav a.current b{
+	background-image: url(Imgs/nav_btnbg_over.png);
+	color:#fff;text-shadow:1px 1px 1px rgba(0,0,0,0.3);
+	background-position:100% 0%;
+}
+.top_nav a span{
+	display:inline-block;
+	height:39px;
+	line-height:39px;
+	float:left;
+	padding:0px 0 0 0px;
+}
+.top_nav a i{
+	width:40px;
+	height:39px;
+	background-image: url(Imgs/icon_leftmenu.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	float:left;
+}
+/*横向标签导航结构*/
+
+/* */
+#fbox{
+	padding: 0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#bs_footcenter{
+	text-align: center;
+	width: 100%;
+	color: White;/*页脚字体颜色*/
+	height: 28px;/*页脚高度*/
+	line-height:4px;/*页脚行高*/
+	overflow:hidden;
+	background-image: url(Imgs/footer.png);
+	background-repeat:repeat-x;
+}
+#fbox .logo {
+background: url(Imgs/icon_system_footer.png) center no-repeat;
+width: 45px;
+height: 17px;
+display: inline-block;
+vertical-align: middle;
+margin-right: 10px;
+}
+
+#bs_footleft{
+	height:100%;
+	width:100%;
+}
+#bs_footright{
+	width:100%;
+	padding:5px 0 0 0;
+}
+/* */
+
+/*左侧树形菜单结构*/
+.treemenu{
+	font-family:sans-serif!important;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    background-color:#E5E5E5;
+} 
+
+.treemenu li{
+    width:100%;
+    padding:0;
+    list-style-type:none;
+}
+
+.treemenu a{
+    text-decoration:none;  
+}
+
+.treemenu li.current{
+    background:url(Imgs/titlebar-active.png) 0 0 repeat;
+}
+
+.treemenu li.current a{
+    color: white;
+}
+
+.treemenu a:hover{
+    color:red;
+    cursor:pointer;
+}
+
+.treemenu li a{
+    margin-left:20px;
+    line-height:34px;
+    width:100%;
+	height: 34px!important;/*第一级高度，加上padding值才是实际高度*/
+	background:url(Imgs/dot1.png) 0 0 no-repeat;
+	background-position:left center;
+    display:block;
+    color: black;
+    text-indent:20px;
+}
+/*左侧树形菜单结构*/
+
+.datagrid-body{
+    background-color:#f5f5f5 !important;
+}
